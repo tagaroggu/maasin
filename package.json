@@ -1,0 +1,27 @@
+{
+  "name": "maasin",
+  "version": "0.0.0",
+  "description": "A very experimental small JavaScript HTML library",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "serve ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tagaroggu/maasin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tagaroggu/maasin/issues"
+  },
+  "homepage": "https://github.com/tagaroggu/maasin#readme",
+  "dependencies": {
+    "@vue/reactivity": "^3.3.4"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}

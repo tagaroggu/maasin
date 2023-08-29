@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maasin</title>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "@vue/reactivity": "/node_modules/@vue/reactivity/dist/reactivity.esm-browser.prod.js"
+            }
+        }
+    </script>
+
+    <script type="module">
+        import { e, a, t } from './index.js';
+        import { ref } from '@vue/reactivity';
+
+        const count = ref(0);
+
+        const counter = e('button', function onclick() { count.value++ }, t(count));
+
+        document.body.appendChild(counter);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
