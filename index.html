@@ -8,20 +8,26 @@
     <script type="importmap">
         {
             "imports": {
-                "@vue/reactivity": "/node_modules/@vue/reactivity/dist/reactivity.esm-browser.prod.js"
+                "morphdom": "/node_modules/morphdom/dist/morphdom-esm.js"
             }
         }
     </script>
 
     <script type="module">
         import { e, a, t } from './index.js';
-        import { ref } from '@vue/reactivity';
+        import morphdom from 'morphdom';
 
-        const count = ref(0);
+        let count = 0;
 
-        const counter = e('button', function onclick() { count.value++ }, t(count));
+        const counter = t(count);
+        const style = a('style', 'color: red');
 
-        document.body.appendChild(counter);
+        document.body.appendChild(e('h1', style, t('Hello, world! '), counter));
+
+        setInterval(() => {
+            count++;
+            morphdom(counter, t(count));
+        }, 1000)
     </script>
 </head>
 <body>

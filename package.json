@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/tagaroggu/maasin#readme",
   "dependencies": {
-    "@vue/reactivity": "^3.3.4"
+    "@vue/reactivity": "^3.3.4",
+    "morphdom": "^2.7.0"
   },
   "devDependencies": {
     "serve": "^14.2.1"
